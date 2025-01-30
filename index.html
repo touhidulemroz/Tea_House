@@ -23,7 +23,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    },
                 }
             }
         }
@@ -31,7 +34,7 @@
 
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- header section  -->
     <header class="flex pt-10 mb-20">
         <!-- text content  -->
@@ -239,8 +242,27 @@
         <!-- News & Events section  -->
     </main>
     <!-- Footer Section -->
-    <footer>
+    <footer class="bg-orange-100 text-grey-700 px-4 md:px-16 ">
+        <div class="w-9/12 mx-auto ">
+            <!-- logo -->
+             <div class="mb-8 flex justify-between ">
+                <img src="images/cup.png" class="mb-8" alt="">
+                <div class="flex items-center">
+                    <h4>Ready To Get Started ?</h4>
+                    <button class="bg-white text-black px-5 py-2 text-xl font-bold rounded-lg mt-5 ">Get Started</button>
+                </div>
+             </div>
+        </div>
 
+        <!-- fourth column  -->
+
+        <div>
+            <h3>Subscribe to our newsletter </h3>
+            <div class="flex flex-col space-y-2">
+                <input type="email" placeholder="Enter your email" class="bg-transparent border-b-2  border-black w-4/6 md:w-5/6">
+
+            </div>
+        </div>
     </footer>
 </body>
 
